@@ -136,6 +136,7 @@ formContainer.addEventListener("submit", (e) => {
 async function fetchSearchWeatherInfo(city) {
     grantAccessContainer.classList.remove("active");
     userInfoContainer.classList.remove("active");
+    errorContainer.classList.remove("active");
     loadingContainer.classList.add("active");
     // api call
     try {
